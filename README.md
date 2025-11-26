@@ -1,10 +1,23 @@
-[![Build Status](https://travis-ci.org/AndersenLab/VCF-kit.svg?branch=master)](https://travis-ci.org/AndersenLab/VCF-kit) [![Coverage Status](https://coveralls.io/repos/github/AndersenLab/vcf-kit/badge.svg?branch=master)](https://coveralls.io/github/AndersenLab/vcf-kit?branch=master) [![Documentation Status](https://readthedocs.org/projects/vcf-kit/badge/?version=latest)](http://vcf-kit.readthedocs.io/en/latest/?badge=latest)
-
-
-VCF-kit - [Documentation](http://vcf-kit.readthedocs.io/en/latest/?badge=latest)
+VCF-kit
 ===========
 
-VCF-kit is a command-line based collection of utilities for performing analysis on Variant Call Format (VCF) files. A summary of the commands is provided below.
+This is a fork of [AndersenLab/VCF-kit](https://github.com/AndersenLab/VCF-kit) to enable easy execution via `uvx`.
+
+The original VCF-kit is a command-line based collection of utilities for performing analysis on Variant Call Format (VCF) files.
+
+No code changes have been made - only modernized packaging with `pyproject.toml`.
+
+## Quick Start with uvx
+
+Run VCF-kit directly without installation:
+
+```bash
+uvx --from git+https://github.com/dakesan/VCF-kit vk --help
+```
+
+## Commands
+
+A summary of the commands is provided below.
 
 | Command |Description                                                                                 |
 |:----------|------------------------------------------------------------------------------------------|
@@ -52,8 +65,12 @@ conda activate vcf-kit
 
 #### Docker
 
-You can also run VCF-kit with all installed dependencies using docker: 
+You can also run VCF-kit with all installed dependencies using docker:
 
 ```bash
 docker run -it andersenlab/vcf-kit vk
 ```
+
+## Original Project
+
+For detailed documentation and original source, see [AndersenLab/VCF-kit](https://github.com/AndersenLab/VCF-kit).
